@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Timer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Countdown Timer</h1>
+        
+        <div class="input-section">
+            <div class="input-group">
+                <label for="target-date">Target Date:</label>
+                <input type="date" id="target-date" required>
+            </div>
+            
+            <div class="input-group">
+                <label for="target-time">Target Time:</label>
+                <input type="time" id="target-time" required>
+            </div>
+            
+            <button id="start-btn">Start Countdown</button>
+            <button id="reset-btn">Reset</button>
+        </div>
+        
+        <div class="countdown-display">
+            <div class="time-block">
+                <span id="days">00</span>
+                <span class="label">Days</span>
+            </div>
+            <div class="time-block">
+                <span id="hours">00</span>
+                <span class="label">Hours</span>
+            </div>
+            <div class="time-block">
+                <span id="minutes">00</span>
+                <span class="label">Minutes</span>
+            </div>
+            <div class="time-block">
+                <span id="seconds">00</span>
+                <span class="label">Seconds</span>
+            </div>
+        </div>
+        
+        <div id="message" class="hidden">
+            <h2>Countdown Complete!</h2>
+            <p>The target date and time has been reached.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
